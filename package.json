@@ -23,7 +23,8 @@
     "predev": "npm run copy",
     "prebuild": "npm run copy",
     "build": "vite build documentation",
-    "preview": "vite preview documentation"
+    "preview": "vite preview documentation",
+    "prepare": "npm run bundle"
   },
   "main": "dist/vue-multiselect.esm.js",
   "unpkg": "dist/vue-multiselect.umd.min.js",
