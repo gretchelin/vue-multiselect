@@ -18,6 +18,7 @@
     </slot>
     <slot name="clear" :search="search"></slot>
     <div ref="tags" class="multiselect__tags">
+      <slot name="prepend" :search="search" :is-open="isOpen" :toggle="toggle" ></slot>
       <slot
         name="selection"
         :search="search"
@@ -91,6 +92,7 @@
           {{ placeholder }}
         </slot>
       </span>
+      <slot name="append" :search="search" :is-open="isOpen" :toggle="toggle" ></slot>
     </div>
     <transition name="multiselect">
       <div
